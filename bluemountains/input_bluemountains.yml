@@ -1,0 +1,32 @@
+name: real landscape model
+
+domain:
+    filename: ['BlueMountains.vtu','Z'] 
+    flowdir: 5
+
+time:
+    start: -1.e6
+    end: -9.99e5
+    tout: 100.
+    dt: 100.
+
+sea:
+    position: 100.
+
+climate:
+    - start: -10000000.
+      uniform: 1.0
+spl:
+    m: 0.5
+    n: 1.0
+    Ke: 5.e-5
+
+diffusion:
+    hillslopeK: 0.  #5.e-2
+    streamK: 5000.
+    oceanK: 1000.
+    step: 100
+
+output:
+    dir: 'blueMountains'
+    makedir: False

@@ -1,0 +1,39 @@
+name: mountain building
+
+domain:
+    filename: ['randomflat.vtu','Z'] 
+    type: unstructured
+    flowdir: 1
+    bc: fixed
+
+time:
+    start: -1.e6
+    end: -5.e5
+    tout: 20000.
+    dt: 1000.
+    
+sea:
+    position: 0.
+
+climate:
+    - start: -1.e6
+      uniform: 1.0
+
+tectonic:
+    - start: -1.e6
+      uniform: 0.002
+      
+spl:
+    m: 0.5
+    n: 1.0
+    Ke: 3.e-5
+
+diffusion:
+    hillslopeK: 1.e-1
+    streamK: 500.
+    oceanK: 200.
+    step: 0
+
+output:
+    dir: 'outputSFD'
+    makedir: False
