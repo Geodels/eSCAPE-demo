@@ -25,7 +25,6 @@ diffusion:
     hillslopeK: 0.  #5.e-2
     streamK: 5000.
     oceanK: 1000.
-    step: 100
 
 output:
     dir: 'blueMountains'
