@@ -17,8 +17,6 @@ climate:
     - start: -10000000.
       uniform: 1.0
 spl:
-    m: 0.5
-    n: 1.0
     Ke: 5.e-6
 
 diffusion:

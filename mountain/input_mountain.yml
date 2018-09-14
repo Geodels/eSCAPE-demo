@@ -23,8 +23,6 @@ tectonic:
       uniform: 0.002
       
 spl:
-    m: 0.5
-    n: 1.0
     Ke: 3.e-5
 
 diffusion:

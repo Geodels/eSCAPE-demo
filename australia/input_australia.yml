@@ -1,38 +1,32 @@
-name: mountain building
+name: Australia Model
 
 domain:
-    filename: ['randomflat.vtu','Z'] 
-    type: unstructured
-    flowdir: 1
-    bc: fixed
+    filename: ['data/AUS.vtk','Z'] 
+    flowdir: 5
 
 time:
-    start: -1.e6
-    end: -5.e5
-    tout: 20000.
+    start: 0
+    end: 50000
+    tout: 5000.
     dt: 1000.
     
 sea:
     position: 0.
 
 climate:
-    - start: -1.e6
+    - start: 0
       uniform: 1.0
-
-tectonic:
-    - start: -1.e6
-      uniform: 0.002
       
 spl:
-    m: 0.5
-    n: 1.0
-    Ke: 3.e-5
+    Ke: 5.e-6
 
 diffusion:
-    hillslopeK: 1.e-1
-    streamK: 500.
-    oceanK: 200.
+    hillslopeK: 1.e-4
+    streamK: 2000.
+    oceanK: 100.
+    maxIT: 2000
 
 output:
-    dir: 'outputSFD'
+    dir: 'aussie'
     makedir: False
+
