@@ -5,3 +5,4 @@
 *.vtk
 *.xmf
 *.xdmf
+earth/data/ETOPO1.tif

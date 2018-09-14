@@ -1,16 +1,14 @@
-name: global model
+name: Global Model Example
 
 domain:
-    filename: ['globeHR.vtk','Z']
-    type: unstructured
-    flowdir: 1
-    bc: fixed
+    filename: ['data/globeLR.vtk','Z']
+    flowdir: 5
 
 time:
     start: 0
-    end: 1000.
-    tout: 1000.
-    dt: 1000.
+    end: 2000.
+    tout: 500.
+    dt: 500.
 
 sea:
     position: 0.
@@ -22,13 +20,14 @@ climate:
 spl:
     m: 0.5
     n: 1.0
-    Ke: 5.e-5
+    Ke: 1.e-5
 
 diffusion:
-    hillslopeK: 5.e-3
-    streamK: 500.
-    oceanK: 200.
+    hillslopeK: 1.e-5
+    streamK: 1000.
+    oceanK: 80.
+    maxIT: 1000
 
 output:
-    dir: 'output'
+    dir: 'globe'
     makedir: False

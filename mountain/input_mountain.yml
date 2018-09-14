@@ -1,19 +1,18 @@
-name: mountain building
+name: Mountain building example
 
 domain:
-    filename: ['randomflat.vtu','Z'] 
-    type: unstructured
-    flowdir: 1
+    filename: ['randomflat.vtk','Z'] 
+    flowdir: 5
     bc: fixed
 
 time:
     start: -1.e6
-    end: -5.e5
+    end: 0
     tout: 20000.
-    dt: 1000.
+    dt: 2000.
     
 sea:
-    position: 0.
+    position: -100.
 
 climate:
     - start: -1.e6
@@ -29,10 +28,11 @@ spl:
     Ke: 3.e-5
 
 diffusion:
-    hillslopeK: 1.e-1
-    streamK: 500.
-    oceanK: 200.
+    hillslopeK: 3.e-3
+    streamK: 0.
+    oceanK: 0.
+    maxIT: 0
 
 output:
-    dir: 'outputSFD'
+    dir: 'outputMFD'
     makedir: False
