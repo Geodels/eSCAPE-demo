@@ -3,7 +3,7 @@
 ### 1- Synthetic model
 
 <div align="center">
-<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/escape_mountain.gif"/>
+<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/escape_mountain.gif" width="800"/>
 </div>
 
 + repo - `mountain`
@@ -33,12 +33,14 @@
 ### 4- Global model
 
 <div align="center">
-    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/FA.png" alt="eSCAPE" title="eSCAPE model"</img>
+    <img width=800 src="https://github.com/Geodels/eSCAPE/blob/master/images/FA.png" alt="eSCAPE" title="eSCAPE model"</img>
 </div>
+
+<div align="center">
+    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/escapezoom.jpg" alt="eSCAPE" title="eSCAPE Earth"</img>
+</div>
+
 
 + repo - `earth`
 
 ***
-<div align="center">
-    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/escapezoom.jpg" alt="eSCAPE" title="eSCAPE Earth"</img>
-</div>
