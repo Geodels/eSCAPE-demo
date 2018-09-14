@@ -1,7 +1,3 @@
-<div align="center">
-    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/bg.jpg" alt="eSCAPE" title="eSCAPE Model"</img>
-</div>
-
 ## examples
 
 ### 1- mountain building
