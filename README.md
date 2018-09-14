@@ -136,7 +136,7 @@ output:
     <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/> 
 </div>
 <div align="center">
-   <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/>
+   <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie2.gif" width="800"/>
 </div>
 
 + repo - `australia`
