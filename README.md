@@ -33,7 +33,7 @@
 ### 4- Global model
 
 <div align="center">
-    <img width=800 src="https://github.com/Geodels/eSCAPE/blob/master/images/FA.png" alt="eSCAPE" title="eSCAPE model"</img>
+    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/FA.png" alt="eSCAPE" title="eSCAPE model"</img>
 </div>
 
 + repo - `earth`
