@@ -36,11 +36,6 @@
     <img width=800 src="https://github.com/Geodels/eSCAPE/blob/master/images/FA.png" alt="eSCAPE" title="eSCAPE model"</img>
 </div>
 
-<div align="center">
-    <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/escapezoom.jpg" alt="eSCAPE" title="eSCAPE Earth"</img>
-</div>
-
-
 + repo - `earth`
 
 ***
