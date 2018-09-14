@@ -93,8 +93,6 @@ tectonic:
       map: ['data/inputfileparameters.vtu','T2']
 
 spl:
-    m: 0.5
-    n: 1.0
     Ke: 1.e-5
 
 diffusion:
