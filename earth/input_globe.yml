@@ -1,13 +1,13 @@
 name: Global Model Example
 
 domain:
-    filename: ['data/globeLR.vtk','Z']
+    filename: ['data/globe.vtk','Z']
     flowdir: 5
 
 time:
     start: 0
-    end: 2000.
-    tout: 500.
+    end: 20000.
+    tout: 1000.
     dt: 500.
 
 sea:
