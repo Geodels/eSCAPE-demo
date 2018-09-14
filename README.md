@@ -133,7 +133,10 @@ output:
 ### 3- Continental model
 
 <div align="center">
-    <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="425"/> <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="425"/>
+    <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/> 
+</div>
+<div align="center">
+   <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/>
 </div>
 
 + repo - `australia`
