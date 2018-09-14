@@ -11,7 +11,7 @@
 ### 2- Regional model
 
 <div align="center">
-<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/ero_dep.gif"/>
+<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/depo_ero.gif"/>
 </div>
 
 ***
