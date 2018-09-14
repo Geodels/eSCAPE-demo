@@ -1,4 +1,4 @@
-## examples
+## Tutorial for eSCAPE
 
 ### 1- Synthetic model
 
