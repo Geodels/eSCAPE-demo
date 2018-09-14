@@ -3,7 +3,7 @@
 ### 1- Synthetic model
 
 <div align="center">
-<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/escape_mountain.gif" width="800"/>
+<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/escape_mountain.gif" width="600"/>
 </div>
 
 + repo - `mountain`
