@@ -2,9 +2,9 @@
     <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/bg.jpg" alt="eSCAPE" title="eSCAPE Model"</img>
 </div>
 
-# Tutorials
+## eSCAPE examples
 
-## Mountain building
+### Mountain building
 
 <div align="center">
 <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/escape_mountain.gif"/>
