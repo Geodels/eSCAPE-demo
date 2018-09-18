@@ -13,7 +13,7 @@ The mesh creation could be a complicated process and relies on a series of libra
 + [fillit](https://github.com/Geodels/fillit)
 + [stripy](https://pypi.org/project/stripy/0.1.2/)
 
-For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries as well as the examples found in here.
+For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries, the code as well as the examples found here.
 
 All the examples have been designed to run on a single machine and should be complete in less than an hour each. They are here to illustrate the basic capability of **eSCAPE**. 
 
