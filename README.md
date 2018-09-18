@@ -2,6 +2,23 @@
     <img width=1000 src="https://github.com/Geodels/eSCAPE/blob/master/images/bg.jpg" alt="eSCAPE" title="eSCAPE Model"</img>
 </div>
 
+## Content
+
+This repository contains a series of 4 examples to run **eSCAPE**. Along with the jupyter notebooks used to run the input files, there is also a series of notebooks (**MeshGen.ipynb**) required to create the initial unstructured grids (**vtk** binary files). 
+
+The mesh creation could be a complicate process and relies on a series of libraries:
++ [meshio](https://pypi.org/project/meshio/)
++ [gdal](https://www.gdal.org)
++ [pygmsh](https://pypi.org/project/pygmsh/)
++ [fillit](https://github.com/Geodels/fillit)
++ [stripy](https://pypi.org/project/stripy/0.1.2/)
+
+For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries as well as the examples found in here.
+
+All the examples have been designed to run on a single machine and should be complete in less than an hour each. They are here to illustrate the basic capability of **eSCAPE**. 
+
+The code parallelisation relies on [petsc4py](https://pypi.org/project/petsc4py/) and scalability tests are still on-going. For now on, we have seen some good performance up to 64 CPUs using a mesh with more than 6 millions vertices. Our goal is to be able to run models with more than 10 millions nodes and over several hundreds of CPUs.
+
 ## Usage
 
 Either via _jupyter notebooks_ or _python_ files.
@@ -106,6 +123,28 @@ output:
     makedir: False
 
 ```
+
+The YAML structure is shown through indentation (one or more spaces) and sequence items are denoted by a dash. At the moment the following component are available:
+
++ `domain`: definition of the unstructured grid containing the vtk grid `filename` and the associated field (here called `Z`) as well as the flow direction method to be used `flowdir` that takes an integer value between 1 (for SFD) and 12 (for Dinf) and the boundary conditions (`bc`: 'flat', 'fixed' or 'slope')
+
++ `time`: the simulation time parameters defined by `start`, `end`, `tout` (the output interval) and `dt` (the internal time-step).
+
+Follows the optional forcing conditions:
+
++ `sea`: the sea-level declaration with the relative sea-level `position` (m) and the sea-level `curve` which is a file containing 2 columns (time and sea-level position).
+
++ `climatic` & `tectonic` have the same structure with a sequence of events defined by a starting time (`start`) and either a constant value (`uniform`) or a `map`.
+
+Then the parameters for the surface processes to simulate:
+
++ `spl`: for the _stream power law_ with a unique parameter `Ke` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
+
++ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`. 
+
+Finally, you will need to specify the output folder:
+
++ `output`: with `dir` the directory name and the option `makedir` that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give `dir` name plus a number at the end (e.g. outputDir_1 if set to True)
 
 ## Examples...
 
