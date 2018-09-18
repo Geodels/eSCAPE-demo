@@ -6,7 +6,7 @@
 
 This repository contains a series of 4 examples to run **eSCAPE**. Along with the jupyter notebooks used to run the input files, there is also a series of notebooks (**MeshGen.ipynb**) required to create the initial unstructured grids (**vtk** binary files). 
 
-The mesh creation could be a complicate process and relies on a series of libraries:
+The mesh creation could be a complicated process and relies on a series of libraries:
 + [meshio](https://pypi.org/project/meshio/)
 + [gdal](https://www.gdal.org)
 + [pygmsh](https://pypi.org/project/pygmsh/)
