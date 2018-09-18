@@ -15,7 +15,7 @@ The mesh creation could be a complicated process and relies on a series of libra
 
 For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries, the code as well as the examples found here.
 
-All the examples have been designed to run on a single machine and should be complete in less than an hour each. They are here to illustrate the basic capability of **eSCAPE**. 
+All the examples have been designed to run on a single machine and should be completed in less than an hour. They are here to illustrate the basic capability of **eSCAPE**. 
 
 The code parallelisation relies on [petsc4py](https://pypi.org/project/petsc4py/) and scalability tests are still on-going. For now on, we have seen some good performance up to 64 CPUs using a mesh with more than 6 millions vertices. Our goal is to be able to run models with more than 10 millions nodes and over several hundreds of CPUs.
 
