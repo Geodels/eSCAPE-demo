@@ -77,7 +77,7 @@ Input files for **eSCAPE** are based on [YAML](https://circleci.com/blog/what-is
 A typical file will look like this:
 
 ```YAML
-name: Description of the what is going to be done in this simulation...
+name: Description of what is going to be done in this simulation...
 
 domain:
     filename: ['data/inputfileparameters.vtu','Z']
