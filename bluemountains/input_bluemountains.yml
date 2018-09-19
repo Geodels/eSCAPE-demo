@@ -1,4 +1,4 @@
-name: real landscape model
+name: Regional model
 
 domain:
     filename: ['data/blueMountains.vtk','Z'] 
