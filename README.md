@@ -12,8 +12,9 @@ The mesh creation could be a complicated process and relies on a series of libra
 + [pygmsh](https://pypi.org/project/pygmsh/)
 + [fillit](https://github.com/Geodels/fillit)
 + [stripy](https://pypi.org/project/stripy/0.1.2/)
++ [lavavu](https://github.com/OKaluza/LavaVu)
 
-For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries, the code as well as the examples found here.
+For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries, the code as well as the examples found here. You will need to set the Docker preferences based on the specific memory and CPUs available in your local machine. Also it is recommended to attached a [volume to the Kitematic image](https://kitematic.com/docs/managing-volumes/) to be able to visualise the model outputs locally.  
 
 All the examples have been designed to run on a single machine and should be completed in less than an hour. They are here to illustrate the basic capability of **eSCAPE**. 
 
