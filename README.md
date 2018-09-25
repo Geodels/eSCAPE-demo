@@ -152,7 +152,7 @@ Finally, you will need to specify the output folder:
 The diagram below illustrates the performance of **eSCAPE** on a mesh with 6M+ nodes.
 
 <div align="center">
-<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/performance.png" width="800"/>
+<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/performance.jpg" width="800"/>
 </div>
 
 Distribution on deposited sediments in both the marine and land regions is dependent of the main rivers positions and is happening on specific locations (river mouths, depressions). As these locations are irregularly positioned on the simulated domain it creates unbalancing issues that arise and potentially decrease overall scalability of the model with increasing number of CPUs.
@@ -164,7 +164,7 @@ Distribution on deposited sediments in both the marine and land regions is depen
 This simple model is used to test your **eSCAPE** installation. It provides tow comparisons related to:
 
 + the _expected values_ that you should obtained if your installation is successful
-+ runtime for both _serial_ and _parallel_ simulation
++ runtime for both _serial_ and _parallel_ simulations
 
 This test should take less than 1 minute. An example on how to visualise **eSCAPE** outputs in [**Paraview**](https://www.paraview.org/download/) is also provided.
 
