@@ -161,7 +161,7 @@ Distribution on deposited sediments in both the marine and land regions is depen
 
 ### 0- Test
 
-This simple model is used to test your **eSCAPE** installation. It provides tow comparisons related to:
+This simple model is used to test your **eSCAPE** installation. It provides two comparisons related to:
 
 + the _expected values_ that you should obtained if your installation is successful
 + runtime for both _serial_ and _parallel_ simulations
