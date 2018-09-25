@@ -147,6 +147,16 @@ Finally, you will need to specify the output folder:
 
 + `output`: with `dir` the directory name and the option `makedir` that gives the possible to delete any existing output folder with the same name (if set to False) or to create a new folder with the give `dir` name plus a number at the end (e.g. outputDir_1 if set to True)
 
+## Perfomance
+
+The diagram below illustrates the performance of **eSCAPE** on a mesh with 6M+ nodes.
+
+<div align="center">
+<img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/performance.png" width="600"/>
+</div>
+
+Distribution on deposited sediments in both the marine and land regions is dependent of the main rivers positions and is happening on specific locations (river mouths, depressions). As these locations are irregularly positioned on the simulated domain it creates unbalancing issues that arise and potentially decrease overall scalability of the model with increasing number of CPUs.
+
 ## Examples...
 
 ### 0- Test
