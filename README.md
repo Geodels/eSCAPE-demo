@@ -4,7 +4,7 @@
 
 ## Content
 
-This repository contains a series of 4 examples to run **eSCAPE**. Along with the jupyter notebooks used to run the input files, there is also a series of notebooks (**MeshGen.ipynb**) required to create the initial unstructured grids (**vtk** binary files). 
+This repository contains a series of 4 examples to run **eSCAPE**. Along with the jupyter notebooks used to run the input files, there is also a series of notebooks (**MeshGen.ipynb**) required to create the initial unstructured grids (**vtk** binary files).
 
 The mesh creation could be a complicated process and relies on a series of libraries:
 + [meshio](https://pypi.org/project/meshio/)
@@ -16,7 +16,7 @@ The mesh creation could be a complicated process and relies on a series of libra
 
 For a quick start, it is recommended to use the [**Geodels escape-docker**](https://hub.docker.com/u/geodels/) image that is shipped with all the required libraries, the code as well as the examples found here. You will need to set the Docker preferences based on the specific memory and CPUs available in your local machine. Also it is recommended to attached a [volume to the Kitematic image](https://kitematic.com/docs/managing-volumes/) to be able to visualise the model outputs locally.  
 
-All the examples have been designed to run on a single machine and should be completed in less than an hour. They are here to illustrate the basic capability of **eSCAPE**. 
+All the examples have been designed to run on a single machine and should be completed in less than an hour. They are here to illustrate the basic capability of **eSCAPE**.
 
 The code parallelisation relies on [petsc4py](https://pypi.org/project/petsc4py/) and scalability tests are still on-going. For now on, we have seen some good performance up to 64 CPUs using a mesh with more than 6 millions vertices. Our goal is to be able to run models with more than 10 millions nodes and over several hundreds of CPUs.
 
@@ -141,7 +141,7 @@ Then the parameters for the surface processes to simulate:
 
 + `spl`: for the _stream power law_ with a unique parameter `Ke` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
 
-+ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`. 
++ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`.
 
 Finally, you will need to specify the output folder:
 
@@ -149,6 +149,14 @@ Finally, you will need to specify the output folder:
 
 ## Examples...
 
+### 0- Test
+
+This simple model is used to test your **eSCAPE** installation. It provides tow comparisons related to:
+
++ the _expected values_ that you should obtained if your installation is successful
++ runtime for both _serial_ and _parallel_ simulation
+
+This test should take less than 1 minute. An example on how to visualise **eSCAPE** outputs in [**Paraview**](https://www.paraview.org/download/) is also provided.
 
 ### 1- Synthetic model
 
@@ -173,7 +181,7 @@ Finally, you will need to specify the output folder:
 ### 3- Continental model
 
 <div align="center">
-    <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/> 
+    <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie.gif" width="800"/>
 </div>
 <div align="center">
    <img src="https://github.com/Geodels/eSCAPE-demo/blob/master/images/aussie2.gif" width="600"/>

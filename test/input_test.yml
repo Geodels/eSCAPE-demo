@@ -1,0 +1,31 @@
+name: simple model for testing installation
+
+domain:
+    filename: ['data/elev.vtu','Z']
+    flowdir: 4
+
+time:
+    start: 0.
+    end: 100.
+    tout: 100.
+    dt: 100.
+
+sea:
+    position: 500.
+
+climate:
+    - start: 0.
+      uniform: 1.0
+
+spl:
+    Ke: 1.e-5
+
+diffusion:
+    hillslopeK: 5.e-2
+    streamK: 500.
+    oceanK: 200.
+    maxIT: 50
+
+output:
+    dir: 'testinstall'
+    makedir: False
