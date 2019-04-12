@@ -1,8 +1,8 @@
-name: Mountain building example
+name: Mountain building example (purely erosive)
 
 domain:
     filename: ['randomflat.vtk','Z'] 
-    flowdir: 5
+    flowdir: 1
     bc: fixed
 
 time:
@@ -22,15 +22,16 @@ tectonic:
     - start: -1.e6
       uniform: 0.002
       
-spl:
-    Ke: 3.e-5
+sp_br:
+    Kbr: 3.e-5
 
+sp_dep:
+    Ff: 1.
+    
 diffusion:
     hillslopeK: 3.e-3
-    streamK: 0.
-    oceanK: 0.
-    maxIT: 0
-
+    sedimentK: 0.
+    
 output:
-    dir: 'outputMFD'
+    dir: 'outputSFD'
     makedir: False

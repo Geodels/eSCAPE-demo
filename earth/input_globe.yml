@@ -17,15 +17,20 @@ climate:
     - start: 0.
       uniform: 1.0
 
-spl:
-    Ke: 1.e-5
+sp_br:
+    Kbr: 1.e-5
 
+sp_dep:
+    Ff: 0.2
+    
 diffusion:
     hillslopeK: 1.e-5
-    streamK: 1000.
-    oceanK: 80.
-    maxIT: 1000
+    sedimentK: 5.e5
 
 output:
     dir: 'globe'
     makedir: False
+
+
+
+

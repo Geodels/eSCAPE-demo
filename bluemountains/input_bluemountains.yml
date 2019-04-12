@@ -3,6 +3,7 @@ name: Regional model
 domain:
     filename: ['data/blueMountains.vtk','Z'] 
     flowdir: 5
+    bc: slope
 
 time:
     start: 0
@@ -16,15 +17,17 @@ sea:
 climate:
     - start: -10000000.
       uniform: 1.0
-spl:
-    Ke: 5.e-6
+
+sp_br:
+    Kbr: 5.e-6
+
+sp_dep:
+    Ff: 0.5
 
 diffusion:
     hillslopeK: 1.e-5
-    streamK: 5000.
-    oceanK: 500.
-    maxIT: 2000
-
+    sedimentK: 100.
+    
 output:
     dir: 'blueMountains'
     makedir: False
