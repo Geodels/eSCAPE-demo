@@ -159,15 +159,6 @@ Distribution on deposited sediments in both the marine and land regions is depen
 
 ## Examples...
 
-### 0- Test
-
-This simple model is used to test your **eSCAPE** installation. It provides two comparisons related to:
-
-+ the _expected values_ that you should obtained if your installation is successful
-+ runtime for both _serial_ and _parallel_ simulations
-
-This test should take less than 1 minute. An example on how to visualise **eSCAPE** outputs in [**Paraview**](https://www.paraview.org/download/) is also provided.
-
 ### 1- Synthetic model
 
 <div align="center">
