@@ -78,11 +78,13 @@ Input files for **eSCAPE** are based on [YAML](https://circleci.com/blog/what-is
 A typical file will look like this:
 
 ```YAML
-name: Description of what is going to be done in this simulation...
+name: Description of the what is going to be done in this simulation...
 
 domain:
-    filename: ['data/inputfileparameters.vtu','Z']
-    flowdir: 1
+    filename: ['data/inputfileparameters.vtk','Z']
+    flowdir: 5
+    bc: 'slope'
+    sphere: 0
 
 time:
     start: 0.
@@ -98,31 +100,31 @@ climate:
     - start: 0.
       uniform: 1.0
     - start: 500000.
-      map: ['data/inputfileparameters.vtu','R']
+      map: ['data/inputfileparameters.vtk','R']
     - start: 500000.
       uniform: 2.0
 
 tectonic:
     - start: 0.
-      map: ['data/inputfileparameters.vtu','T1']
+      mapZ: ['data/inputfileparameters.vtk','T1']
     - start: 100000.
       uniform: 0.
     - start: 50000.
-      map: ['data/inputfileparameters.vtu','T2']
+      mapZ: ['data/inputfileparameters.vtk','T2']
 
-spl:
-    Ke: 1.e-5
+sp_br:
+    Kbr: 1.e-5
+
+sp_dep:
+    Ff: 0.3
 
 diffusion:
-    hillslopeK: 5.e-2
-    streamK: 300.
-    oceanK: 100.
-    maxIT: 2000
+    hillslopeK: 1.e-6
+    sedimentK: 5.e6
 
 output:
     dir: 'outputDir'
     makedir: False
-
 ```
 
 The YAML structure is shown through indentation (one or more spaces) and sequence items are denoted by a dash. At the moment the following component are available:
@@ -139,9 +141,9 @@ Follows the optional forcing conditions:
 
 Then the parameters for the surface processes to simulate:
 
-+ `spl`: for the _stream power law_ with a unique parameter `Ke` representing the The erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
++ `sp_br`: for the _stream power law_ with a unique parameter `Kbr` representing the erodibility coefficient which is scale-dependent and its value depend on lithology and mean precipitation rate, channel width, flood frequency, channel hydraulics. It is worth noting that the coefficient _m_ and _n_ are fixed in this version and take the value 0.5 & 1 respectively.
 
-+ `diffusion`: hillslope, stream and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. River transported sediment trapped in inland depressions or  internally draining basins are diffused using the coefficient (`streamK`). The marine sediment are transported based on a diffusion coefficient `oceanK`. The parameter `maxIT` specifies the maximum number of steps used for diffusing sediment during any given time interval `dt`.
++ `diffusion`: hillslope and marine diffusion coefficients. `hillslopeK` sets the _simple creep_ transport law which states that transport rate depends linearly on topographic gradient. The marine sediment are transported based on a diffusion coefficient `sedimentK`. 
 
 Finally, you will need to specify the output folder:
 
